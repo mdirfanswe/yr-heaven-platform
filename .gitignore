@@ -1,0 +1,30 @@
+# 1. Java & Maven (Backend)
+backend/target/
+*.class
+*.jar
+*.war
+*.log
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# 2. Node & Vite (Frontend)
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+
+# 3. IDEs & Editors (Ignores the .idea folder IntelliJ created)
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+
+# 4. Secrets & Environment
+.env
+.env.*
+!.env.example
+application-local.yml
+
+# 5. OS Files
+.DS_Store
+Thumbs.db
