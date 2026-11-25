@@ -25,9 +25,16 @@ spring:
     enabled: true
     locations: classpath:db/migration
     baseline-on-migrate: true
+app:
+  bootstrap:
+    owner-email: ${INITIAL_OWNER_EMAIL:owner@yrheaven.local}
+    owner-password: ${INITIAL_OWNER_PASSWORD:ChangeMe@123}
+    owner-name: ${INITIAL_OWNER_NAME:YR Heaven Shop Owner}
+    owner-phone: ${INITIAL_OWNER_PHONE:9576545759}
 
 logging:
   level:
     root: INFO
     com.yrheaven: DEBUG
     org.flywaydb: INFO
+
